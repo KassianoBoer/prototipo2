@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page - Produto Digital</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #0a0a0a;
+        color: white;
+    }
+    header {
+        background: linear-gradient(90deg, #000, #111);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid gold;
+    }
+    header h1 {
+        font-size: 2.5em;
+        color: gold;
+        text-shadow: 0 0 10px rgba(255,215,0,0.7);
+        animation: fadeInDown 1.2s ease-out;
+    }
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background: url('https://via.placeholder.com/1200x500/000000/FFD700?text=Seu+Produto+Aqui') center/cover no-repeat;
+    }
+    .hero h2 {
+        font-size: 2em;
+        background: rgba(0,0,0,0.6);
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in;
+    }
+    .hero p {
+        max-width: 600px;
+        margin: 20px auto;
+        font-size: 1.1em;
+        animation: fadeInUp 1.5s ease-out;
+    }
+    .cta-button {
+        background: gold;
+        color: black;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: fadeInUp 1.5s ease-out;
+    }
+    .cta-button:hover {
+        background: #ffcc00;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px gold;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    h3 {
+        color: gold;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+        position: relative;
+        animation: fadeIn 1.5s ease-in;
+    }
+    h3::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: gold;
+        margin: 10px auto;
+    }
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .feature {
+        background: #111;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px gold;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #000;
+        color: #aaa;
+        border-top: 2px solid gold;
+    }
+    /* Animações */
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+        from {opacity: 0; transform: translateY(-30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Nome do Produto Digital</h1>
+</header>
+
+<section class="hero">
+    <h2>Transforme seu conhecimento em resultado!</h2>
+    <p>Descubra como este produto digital pode mudar sua vida profissional e pessoal. Conteúdo prático, direto e com resultados comprovados.</p>
+    <a href="https://wa.me/seunumerowhatsapp" target="_blank">
+        <button class="cta-button">Falar no WhatsApp</button>
+    </a>
+</section>
+
+<section>
+    <h3>O que você vai encontrar</h3>
+    <div class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/200/FFD700/000000?text=Ícone+1" alt="Benefício 1">
+            <h4>Conteúdo Exclusivo</h4>
+            <p>Material criado especialmente para você, com informações inéditas.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/200/FFD700/000000?text=Ícone+2" alt="Benefício 2">
+            <h4>Acesso Vitalício</h4>
+            <p>Aprenda no seu tempo, sem pressa e sem prazo para expirar.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/200/FFD700/000000?text=Ícone+3" alt="Benefício 3">
+            <h4>Suporte Especializado</h4>
+            <p>Tenha um canal direto para tirar dúvidas e receber orientações.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Seu Nome - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
